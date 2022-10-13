@@ -3,7 +3,8 @@ public class Zadanie3 {
         double a = 3;
         double b = 9;
         double dzielnik = 1;
-        // zakładamy że 0 nie jest liczbą naturalną, więc nie sprawdzamy czy jest tu 0
+        if (a <= 0 || b <= 0) { System.out.println("Obydwie liczby muszą być naturalne"); System.exit(1); }
+        if ((a != (int)a) || (b != (int)b)) { System.out.println("Obydwie liczby muszą być naturalne"); System.exit(1); }
         for (int i = 1; ((i <= b) && (i <= a)); i++) {
             if (a%i == 0 && b%i ==0) { dzielnik = i; }
         }
