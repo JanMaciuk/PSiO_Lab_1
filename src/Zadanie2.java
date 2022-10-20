@@ -2,7 +2,7 @@ public class Zadanie2 {
     public static void main(String[] args) {
 
         double a = 3;
-        double b = 5;
+        double b = -5.45;
         double c = 9;
 
         if (a < b) {
